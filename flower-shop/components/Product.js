@@ -18,7 +18,7 @@ export default function Product ({id, price, name, image}) {
           <Image className={style.image_size} src={image} width={250} height={250} alt="image">
           </Image>
           <button onClick={() => (addProducts(id))}   className={style.add_remove_button}>
-            Add {cartItemsAmount > 0 && <>({cartItemsAmount})</>}
+            Add to cart {cartItemsAmount > 0 && <>({cartItemsAmount})</>}
           </button>   
         </div>         
       </div>
