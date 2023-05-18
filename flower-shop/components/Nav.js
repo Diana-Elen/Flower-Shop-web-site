@@ -17,7 +17,7 @@ export default function NavBar() {
             <Nav.Link href="./" className={style.nav_text}>home</Nav.Link>
             <Nav.Link href="./about" className={style.nav_text}>about</Nav.Link>
             <Nav.Link href="./contact" className={style.nav_text}>contact</Nav.Link>
-            <Nav.Link href="./contact"className={style.nav_text}><ShoppingCart /></Nav.Link>
+            <Nav.Link href="./shopping_cart"className={style.nav_text}><ShoppingCart /></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
