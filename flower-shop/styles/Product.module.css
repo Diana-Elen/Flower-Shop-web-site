@@ -81,12 +81,11 @@
 }
 .add_remove_button {
     width: auto;
-    background-color: pink;
+    background-color: white;
     text-align: center;
-    border-radius: 0.5rem;
+    border: none;
     margin: 0.5rem;
-    padding: 0.1rem 0.8rem;
-    font-size: 0.8rem;
+    padding: 0;
 }
 .add_remove_line {
     display: flex;

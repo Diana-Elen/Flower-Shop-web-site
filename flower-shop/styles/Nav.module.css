@@ -7,3 +7,9 @@
     background-color:white;
     padding: 1rem;
 }
+.nav_text {
+    font-weight:600;
+    font-size: 1.4rem;
+    color: black;
+
+}

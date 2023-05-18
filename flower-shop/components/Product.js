@@ -2,6 +2,7 @@ import style from "../styles/Product.module.css"
 import Image from "next/image";
 import { ShoppingCartContext } from "@/context/ShoppingCartContext";
 import { useContext } from "react";
+import { ShoppingCart } from "phosphor-react";
 
 export default function Product ({id, price, name, image}) {
   const{addProducts, cartItems} = useContext(ShoppingCartContext);
@@ -17,9 +18,11 @@ export default function Product ({id, price, name, image}) {
           </div>
           <Image className={style.image_size} src={image} width={250} height={250} alt="image">
           </Image>
-          <button onClick={() => (addProducts(id))}   className={style.add_remove_button}>
-            Add to cart {cartItemsAmount > 0 && <>({cartItemsAmount})</>}
+          <button onClick={() => (addProducts(id))} className={style.add_remove_button}>
+          <ShoppingCart size={32}/>
+          {cartItemsAmount > 0 && <>({cartItemsAmount})</>}
           </button>   
+          
         </div>         
       </div>
     </>
