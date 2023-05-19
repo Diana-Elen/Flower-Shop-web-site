@@ -3,6 +3,7 @@ import Image from "next/image"
 import image_florist_field from "../images/image_florist_field.png"
 import florist_flowers from "../images/florist_flowers.png"
 
+
 export default function AboutUs() {
     return <>
         <p className={styles.text}>
