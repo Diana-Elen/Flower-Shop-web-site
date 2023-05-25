@@ -2,7 +2,11 @@ import style from "../styles/Form.module.css"
 
 export default function Form() {
     return <>
-        <form className={style.contact_form} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form className={style.contact_form} 
+            name="contact" method="post" 
+            action="/?success=true"   
+            data-netlify="true" 
+            data-netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact" />
             <h1 className={style.title}>Contact us</h1>
             <label className={style.form_group}>
