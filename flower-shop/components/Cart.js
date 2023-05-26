@@ -6,8 +6,8 @@ import CheckoutForm from "./CheckoutForm"
 import style from "../styles/Cart.module.css"
 
 export default function Cart ({products}) {
-  const { cartItems, getTotalCartAmount, totalAmount } = useContext(ShoppingCartContext);
-  
+  const { cartItems, getTotalCartAmount } = useContext(ShoppingCartContext);
+  const totalAmount = getTotalCartAmount();
   return <>
       <div>
         <h1 className={style.text}>Your cart items</h1>
