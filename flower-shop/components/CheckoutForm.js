@@ -1,68 +1,42 @@
-import React, { useState } from "react";
-import { useRouter } from "next/router";
- 
-const CheckoutForm = () => {
- const [submitterName, setSubmitterName] = useState("");
- const router = useRouter();
- const confirmationScreenVisible =
-   router.query?.success && router.query.success === "true";
- const formVisible = !confirmationScreenVisible;
- const ConfirmationMessage = (
-   <>
-     <p>
-       Thank you for submitting this form. Someone should get back to you
-       within 24-48 hours.
-     </p>
- 
-     <button onClick={() => router.replace("/contact", undefined, { shallow: true })}> Submit Another Response </button>
-   </>
- );
- 
- const ContactForm = (
-   <form
-     className="container"
-     method="POST"
-     name="contact-form"
-     action="contact/?success=true"
-     data-netlify="true"
-     data-netlify-honeypot="bot-field"
-   >
-     <input
-       type="hidden"
-       name="subject"
-       value={`You've got mail from ${submitterName}`}
-     />
-     <input type="hidden" name="form-name" value="contact-form" />
-     <p hidden>
-       <label>
-         Don’t fill this out: <input name="bot-field" />
-       </label>
-     </p>
- 
-     <label htmlFor="name">Name *</label>
-     <input
-       id="name"
-       name="name"
-       required
-       onChange={(e) => setSubmitterName(e.target.value)}
-       type="text"
-     />
-     <label htmlFor="company">Company *</label>
-     <input id="company" name="company" required type="text" />
-     <label htmlFor="email">E-mail Address *</label>
-     <input id="email" type="email" name="email" required />
-     <label htmlFor="message">Message *</label>
-     <textarea id="message" name="message" required/>
-     <button type="submit">Submit</button>
-   </form>
- );
- 
- return (
-   <div>
-     <h1>Contact Us</h1>
-     {formVisible ? ContactForm : ConfirmationMessage}
-   </div>
- );
-};
- 
-export default CheckoutForm;
+import style from "../styles/Form.module.css"
+
+export default function CheckoutForm() {
+
+  return <>
+    <form className={style.contact_form} form name="contact-form" action="/success/" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact-form"/>
+        <div className={style.form_style}>
+        <h1 className={style.title}>Fill in the details of your order</h1>
+          <label className={style.form_group}>
+              Name
+              <input type="text" name="checkbox_name" placeholder="Name" required/>
+          </label>
+          <label className={style.form_group}>
+              Address
+              <input type="text" name="checkbox_address" placeholder="Address" required/>
+          </label>
+          <label class={style.form_group}>
+              Email
+          <input type="email" name="checkbox_email" placeholder="user@domain.ext" required/>
+          </label>
+          <label className={style.form_group}>
+              Message
+          <textarea placeholder="fill in your remarks" name="message" required>
+          </textarea>
+          </label>
+          <div className={style.checkbox_group}>
+              <input type="checkbox" name="checkbox_accept" required/>
+              <label for="val1">I read the terms and conditions</label>
+          </div>
+          <div className={style.btn_group}>
+              <button className={style.button_style} type="reset" value="Reset the form">
+                Reset the form
+              </button>
+              <button className={style.button_style} type="submit" value="Send order">
+                Send
+              </button>
+          </div>
+        </div>
+      </form>
+  </>
+}
