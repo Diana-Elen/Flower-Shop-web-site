@@ -3,8 +3,8 @@ import style from "../styles/Form.module.css"
 export default function CheckoutForm() {
 
   return <>
-    <form className={style.contact_form} form name="my-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="my-form"/>
+    <form className={style.contact_form} form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact"/>
       <div className={style.form_style}>
       <h1 className={style.title}>Fill in the details of your order</h1>
         <label className={style.form_group}>
