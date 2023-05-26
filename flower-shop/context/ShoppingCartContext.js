@@ -38,8 +38,9 @@ export const ShoppingCartContextProvider = (props) => {
     const checkout = () => {
     setCartItems(getDefaultCartStatus());
     };
+    const totalAmount = getTotalCartAmount();
      
-    const contextValue = {cartItems, addProducts, removeProducts, getTotalCartAmount, checkout};
+    const contextValue = {cartItems, addProducts, removeProducts, getTotalCartAmount, checkout, totalAmount};
 
     return <ShoppingCartContext.Provider value={contextValue}>
         {props.children}
