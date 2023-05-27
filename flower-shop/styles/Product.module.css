@@ -113,3 +113,12 @@
 .cart_product:hover {
     box-shadow: 0.5rem 0.5rem 0.5rem 0.2rem rgba(139, 141, 141, 0.5);
 }
+.cartitems_container {
+    width: 25vw;
+    margin-inline: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
