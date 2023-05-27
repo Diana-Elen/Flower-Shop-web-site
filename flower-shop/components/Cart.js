@@ -29,8 +29,9 @@ export default function Cart ({products}) {
           <div className={style.final_price}>
             <p className={style.total_pay}> Total: {totalAmount}$</p>
             <button className={style.checkout_button}>
-              <CheckoutForm totalAmount={totalAmount}/>
+              
             </button>
+            <CheckoutForm totalAmount={totalAmount}/>
           </div>
         </div>
         ) : (

@@ -15,16 +15,6 @@ export default function CartItem ({price, name, image, id}) {
       </div>
       <Image className={style.image_size} src={image} width={250} height={250} alt="image">
       </Image>
-      <div className={style.add_remove_line}>
-        <button onClick={() => addProducts(id)} className={style.add_remove_button}>
-          + 
-        </button>
-        <input value={cartItems[id]} className={style.input}
-        onChange={(e) => updateCartItemCount(Number(e.target.value), id)}/>
-        <button onClick={() => removeProducts(id)} className={style.add_remove_button}>
-          -
-        </button>
-      </div>
     </div>
     </div>
   </>

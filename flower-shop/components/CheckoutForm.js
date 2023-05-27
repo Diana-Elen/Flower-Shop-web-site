@@ -3,7 +3,7 @@ import style from "../styles/Form.module.css"
 export default function CheckoutForm() {
 
   return <>
-    <form className={style.contact_form} form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+    <form className={style.contact_form} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact"/>
       <div className={style.form_style}>
       <h1 className={style.title}>Fill in the details of your order</h1>
@@ -15,7 +15,7 @@ export default function CheckoutForm() {
             Address
             <input type="text" name="checkbox_address" placeholder="Address" required/>
         </label>
-        <label class={style.form_group}>
+        <label className={style.form_group}>
             Email
         <input type="email" name="checkbox_email" placeholder="user@domain.ext" required/>
         </label>
@@ -26,7 +26,7 @@ export default function CheckoutForm() {
         </label>
         <div className={style.checkbox_group}>
             <input type="checkbox" name="checkbox_accept" required/>
-            <label for="val1">I read the terms and conditions</label>
+            <label>I read the terms and conditions</label>
         </div>
         <div className={style.btn_group}>
             <button className={style.button_style} type="reset" value="Reset the form">

@@ -9,7 +9,7 @@ export default function ShoppingCart({cartItems}) {
     return <>
     <Nav />
     <MyCarousel />
-    <CheckoutForm />
+    <CheckoutForm cartItems={cartItems}/>
     <Footer />
     </>
 }
