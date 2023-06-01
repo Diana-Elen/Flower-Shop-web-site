@@ -5,11 +5,10 @@ import Footer from "@/components/Footer"
 import CheckoutForm from "@/components/CheckoutForm"
 
 
-export default function ShoppingCart({cartItems}) {
+export default function ShoppingCart() {
     return <>
     <Nav />
-    <MyCarousel />
-    <CheckoutForm cartItems={cartItems}/>
+    <CheckoutForm />
     <Footer />
     </>
 }
