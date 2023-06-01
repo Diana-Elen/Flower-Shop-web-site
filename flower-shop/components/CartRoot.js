@@ -7,18 +7,18 @@ import MyCarousel from "./MyCarousel";
 import TabNav from "./TabNav";
 import Footer from "./Footer";
 
-export default function App() {
+export default function CartRoot() {
     const {products} = data;
     return <>
         <ShoppingCartContextProvider>
             <div>
-                <Nav />
-                <MyCarousel />
-                <TabNav />
-                <ProductGroup 
+          
+              
+                <Cart
                     products={products} 
                 />
-                <Footer />
+               
+                
             </div>
         </ShoppingCartContextProvider>
     </>
