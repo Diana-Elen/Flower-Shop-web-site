@@ -9,7 +9,6 @@ export default function ShoppingCart() {
     return <>
     <Nav />
     <CartRoot />
-    <CheckoutForm />
     <Footer />
     </>
 }
