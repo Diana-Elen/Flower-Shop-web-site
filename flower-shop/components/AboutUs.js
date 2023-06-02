@@ -1,7 +1,7 @@
 import styles from "../styles/AboutUs.module.css"
 import Image from "next/image"
-import image_florist_field from "../images/image_florist_field.png"
-import florist_flowers from "../images/florist_flowers.png"
+import image_florist_field from "../images/image_florist_field.webp"
+import florist_flowers from "../images/florist_flowers.webp"
 
 
 export default function AboutUs() {
