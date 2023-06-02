@@ -12,9 +12,9 @@ import wed_bouquet from "../images/wed_bouquet.png"
 import colored_tulips from "../images/colored_tulips.png"
 import pink_roses_2 from "../images/pink_roses_2.png"
 import white_peonies from "../images/white_peonies.png"
-import colored_freesia from "../images/colored_freesias.png"
+import colored_freesia from "../images/colored_freesias.webp"
 import yellow_roses from "../images/yellow_roses.png"
-import colored_chrisantemum from "../images/colored_chrisantemum.png"
+import colored_chrisantemum from "../images/colored_chrisantemum.webp"
 import basket_icon from "../images/basket_icon.jpg"
 
 

@@ -18,8 +18,8 @@ export const ShoppingCartContextProvider = (props) => {
     const getTotalCartAmount = () => {
       let totalAmount = 0;
       for (const item in cartItems) {
-        if (cartItems[item] > 0) {
-          let itemInfo = data.products.find((product) => product.id == Number(item));
+        if (cartItems[item] > 1) {
+          let itemInfo = data.products.find((product) => product.nr == Number(item));
           totalAmount += cartItems[item] * itemInfo.price;
           console.log({itemInfo})
         }

@@ -21,11 +21,9 @@ export default function Cart ({products}) {
         })}
       </div>
       {totalAmount > 0 ? (
-        <div>
-          <div className={style.final_price}>
-            <p className={style.total_pay}> Total: {totalAmount}$</p>
-            <CheckoutForm totalAmount={totalAmount}/>
-          </div>
+        <div className={style.final_price}>
+          <p className={style.total_pay}> Total: {totalAmount}$</p>
+          <CheckoutForm totalAmount={totalAmount}/>
         </div>
         ) : (
         <h1 className={style.text}>Your Shopping Cart is Empty</h1>
