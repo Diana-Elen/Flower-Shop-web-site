@@ -13,7 +13,7 @@ export default function CartItem ({product}) {
           <div className={style.product_name}>{product.name}</div>
           <div className={style.product_price}>{product.price}$</div>
         </div>
-        <Image className={style.image_size} src={product.image} width={250} height={250} alt="image">
+        <Image className={style.image_size} src={product.image} width={250} height={250} alt="image" priority="true">
         </Image>
         <div className={style.add_remove_line}>
           <button onClick={() => addProducts(product.id)} className={style.add_remove_button}>
