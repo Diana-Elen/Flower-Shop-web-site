@@ -12,7 +12,7 @@ export default function Cart ({products}) {
       <div>
         <h1 className={style.text}>Your cart items</h1>
         {products.map((product) => {
-          if (cartItems[product.id] >= 0) {
+          if (cartItems[product.id] > 0) {
             return <>
               <CartItem key={product.id}
                 product={product} />
