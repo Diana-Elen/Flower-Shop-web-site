@@ -1,12 +1,12 @@
 import { createContext, useEffect, useState } from "react";
 import data from "@/components/data";
-import ProductGroup from "@/components/ProductGroup";
+
 
 export const ShoppingCartContext = createContext(null);
 
 const getDefaultCartStatus = () => {
     let cart = {};
-    for (let i = 1; i < data.products.length + 1; i++) {
+    for (let i = 0; i < data.products.length + 1; i++) {
         cart[i] = 0;
     }
     return cart;
