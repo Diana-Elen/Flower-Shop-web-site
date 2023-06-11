@@ -9,17 +9,18 @@
 .product {
     width: 80%;
 }
-.prod {
+.product_container {
     height: auto;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-inline: auto;
+    margin-inline: 1rem;
 }
-.prod:hover {
+.product_container:hover {
     box-shadow: 0.5rem 0.5rem 0.5rem 0.2rem rgba(139, 141, 141, 0.5);
+    border: 1px solid grey;
 }
 .name_price {
     display: flex;
