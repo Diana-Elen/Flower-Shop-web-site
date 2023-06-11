@@ -28,7 +28,7 @@ function MyCarousel() {
         />
 
         <Carousel.Caption>
-          <h3>Wide range of flowers</h3>
+          <h3>Wide range of flowers that can be delivered in the Warwickshire region, UK</h3>
           <p>A beautiful selection of fresh flowers, every day</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -42,7 +42,7 @@ function MyCarousel() {
         <Carousel.Caption>
           <h3>Happy clients</h3>
           <p>
-            You can find us every day at our flower shop
+            You can find us every day at our flower shop or you can order online our beautiful flower arrangements
           </p>
         </Carousel.Caption>
       </Carousel.Item>

@@ -1,7 +1,7 @@
 import style from "../styles/TabNav.module.css";
 import { useState } from "react";
 import Description from "./Description";
-import Promotions from "./Promotions";
+import Testimonials from "./Testimonials";
 
 
 export default function TabNav() {
@@ -10,10 +10,10 @@ export default function TabNav() {
     return <div className={style.components}> 
         <div className={style.tab_nav}>
             <button className={style.tab_nav_button} onClick={() => setActive(!active)}>
-                About us {(active)}
+                Our promise {(active)}
             </button>
             <button className={style.tab_nav_button} onClick={() => setActive(!active)}>
-                Promotions {(active)}
+                Testimonials {(active)}
             </button>
         </div>
         <div className={style.text}>
@@ -21,7 +21,7 @@ export default function TabNav() {
                 <Description />
             </div>}
             {!active && <div>
-                <Promotions />
+                <Testimonials />
             </div>}
         </div>    
 </div>

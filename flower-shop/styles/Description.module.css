@@ -7,6 +7,29 @@
     padding: 1rem;
     border-radius: 1rem;
 }
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-style: italic;
+}
+.client_review {
+    width: 25vw;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+}
+.client_feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(197, 201, 197);
+    border-radius: 1rem;
+
+}
 
 @media (min-width: 800px) {
     .description_text {
