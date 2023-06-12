@@ -24,7 +24,7 @@ export default function Testimonials() {
             </div>
             <div className={style.client_feedback}>
                 <p className={style.client_review}>
-                Thank you so much the flowers, they were beautiful and the service was exceptional. 
+                Thank you so much for the flowers, they were beautiful and the service was exceptional. 
                 I can't thank you enough for the beautiful arrangement and care in delivery. 
                 I will always use Diana's flower shop for my business.
                 </p>
