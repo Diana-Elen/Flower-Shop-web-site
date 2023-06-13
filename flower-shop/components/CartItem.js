@@ -7,7 +7,7 @@ export default function CartItem ({product}) {
   const {addProducts, removeProducts, cartItems} = useContext(ShoppingCartContext);
   return <>
     <div className={style.cartitems_container}>
-      <div className={style.cart_product}>
+      <div className={style.product_container}>
         <div className={style.name_price}>
         <div className={style.product_name}></div>
           <div className={style.product_name}>{product.name}</div>
