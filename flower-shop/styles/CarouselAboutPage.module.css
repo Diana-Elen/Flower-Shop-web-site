@@ -5,7 +5,15 @@
     align-items: center;
     margin: 1rem;
 }
-
 .carousel_title {
-    color: pink;
+    color: black;
+}
+.arrow {
+    border: none;
+    background-color: white;
+}
+.image_arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
