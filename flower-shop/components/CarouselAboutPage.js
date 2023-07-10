@@ -2,12 +2,16 @@ import { useState } from "react";
 import data from "./data";
 import Image from "next/image";
 import style from "../styles/CarouselAboutPage.module.css"
-import arrow from "../images/arrow.png"
+import arrow_add from "../images/arrow.png"
+import arrow_remove from "../images/arrow.png"
 
 export default function CarouselAboutPage() {
     const [index, setIndex] = useState(0);
-    function handleClick() {
+    function handleClickAdd() {
         setIndex(index + 1);
+    }
+    function handleClickRemove() {
+        setIndex(index - 1);
     }
     let myimages = data.products[index];
     return <>
@@ -15,9 +19,13 @@ export default function CarouselAboutPage() {
         <h2 className={style.carousel_title}>Check out my favourite bouquets:</h2>
         <h4>{myimages.name}</h4>
         <div className={style.image_arrow}>
+            <button onClick={handleClickRemove} className={style.arrow_remove}>
+                <Image src={arrow_remove} height={30} width={30} >
+                </Image>
+            </button>
             <Image src={myimages.image} height={300} width={300} />
-            <button onClick={handleClick} className={style.arrow}>
-                <Image src={arrow} height={30} width={30} >
+            <button onClick={handleClickAdd} className={style.arrow_add}>
+                <Image src={arrow_add} height={30} width={30} >
                 </Image>
             </button>
         </div>

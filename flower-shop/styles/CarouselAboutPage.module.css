@@ -15,12 +15,17 @@
 .carousel_title {
     color: black;
 }
-.arrow {
+.arrow_add, .arrow_remove {
     border: none;
-    background-color: white;
+    width: 2vw;
+    height: 2vw;
+}
+.arrow_remove {
+    transform: rotate(180deg);
 }
 .image_arrow {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
