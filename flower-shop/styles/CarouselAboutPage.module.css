@@ -45,7 +45,7 @@
 }
 @media (min-width: 800px) {
     .carousel_container {
-        width: 60vw;
+        width: 40vw;
     }
     .carousel_title {
         font-size: 1.8rem;
