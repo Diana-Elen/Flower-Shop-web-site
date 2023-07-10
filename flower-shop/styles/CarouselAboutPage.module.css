@@ -4,16 +4,18 @@
     justify-content: center;
     align-items: center;
     margin: 1rem;
-    width: 40vw;
+    width: 80vw;
     margin-inline: auto;
     padding: 1rem;
     border-radius: 3rem;
+    gap: 1rem;
 }
 .carousel_container:hover {
     border: 2px solid rgb(197, 197, 195);
 }
 .carousel_title {
     color: black;
+    font-size: 1rem;
 }
 .arrow_add, .arrow_remove {
     border: none;
@@ -32,4 +34,20 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
+}
+
+@media (min-width: 500px) {
+    .main_image {
+        height: 30vh;
+        width: auto;
+    }
+}
+@media (min-width: 800px) {
+    .carousel_container {
+        width: 60vw;
+    }
+    .carousel_title {
+        font-size: 1.8rem;
+    }    
 }

@@ -23,7 +23,7 @@ export default function CarouselAboutPage() {
                 <Image src={arrow_remove} height={30} width={30} >
                 </Image>
             </button>
-            <Image src={myimages.image} height={300} width={300} />
+            <Image src={myimages.image} className={style.main_image} height={200} width={200} />
             <button onClick={handleClickAdd} className={style.arrow_add}>
                 <Image src={arrow_add} height={30} width={30} >
                 </Image>
