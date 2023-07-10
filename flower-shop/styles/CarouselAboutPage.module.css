@@ -4,6 +4,13 @@
     justify-content: center;
     align-items: center;
     margin: 1rem;
+    width: 40vw;
+    margin-inline: auto;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+.carousel_container:hover {
+    background-color:rgb(197, 197, 195);
 }
 .carousel_title {
     color: black;
