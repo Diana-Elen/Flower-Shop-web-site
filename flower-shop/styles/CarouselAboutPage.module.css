@@ -10,7 +10,7 @@
     border-radius: 3rem;
 }
 .carousel_container:hover {
-    background-color:rgb(197, 197, 195);
+    border: 2px solid rgb(197, 197, 195);
 }
 .carousel_title {
     color: black;
@@ -19,6 +19,10 @@
     border: none;
     width: 2vw;
     height: 2vw;
+    background-color: white;
+}
+.arrow_add:hover, .arrow_remove:hover {
+    background-color: none;
 }
 .arrow_remove {
     transform: rotate(180deg);
